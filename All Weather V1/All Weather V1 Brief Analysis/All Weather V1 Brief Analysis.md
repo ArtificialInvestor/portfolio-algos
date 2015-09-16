@@ -30,14 +30,14 @@ Desirable returns is understandably a very subjective and a weak term, here I sh
 
 * High [Sharpe Ratio](https://en.wikipedia.org/wiki/Sharpe_ratio) - Deviation risk measure (Reward to variability)
 * High [Stability](https://en.wikipedia.org/wiki/Coefficient_of_determination) - R-squared of a linear fit to the returns
-* High [Alpha](<https://en.wikipedia.org/wiki/Alpha_(finance) - Active return of investment
+* High [Alpha][] - Active return of investment
 * High [Calmar Ratio](https://en.wikipedia.org/wiki/Calmar_ratio) - Compound annual returns divided by Max Drawdowb
 * High [Sortino Ratio](https://en.wikipedia.org/wiki/Sortino_ratio) - Variation on Sharpe penilising downside volatility only
 * High [Omega Ratio](https://en.wikipedia.org/wiki/Omega_ratio) - Probabilty weighted ratio of returns vs losses
-* Low [Max Drawdown](<https://en.wikipedia.org/wiki/Drawdown_(economics) - Highest to lowest point since inception
-* Low [Volatility](<https://en.wikipedia.org/wiki/Volatility_(finance) - Degree of variation in returns
-* Low [Beta](<https://en.wikipedia.org/wiki/Beta_(finance) - Exposure to general market movements
-* Low [Kurtois](https://en.wikipedia.org/wiki/Kurtosis) - "Peakedness" of returns vs Normal Distribution (High = Fat tails)
+* Low [Max Drawdown][] - Highest to lowest point since inception
+* Low [Volatility][] - Degree of variation in returns
+* Low [Beta][] - Exposure to general market movements
+* Low [Kurtois](https://en.wikipedia.org/wiki/Kurtosis) - "Peakedness" of returns vs Normal Distribution (High = Fat tails
 * Positive [Skew](https://en.wikipedia.org/wiki/Skewness) - "Skewdness" of returns vs Normal Distribution
 
 
@@ -67,6 +67,11 @@ Although both these issues arguably have little affect to my performance it is o
 * Slippage model implemented can be read about [here](https://www.quantopian.com/help#ide-slippage)
 
 In both cases the actual algorithm contains more conservative parameters for costs and slippage (per share costs is 200% above fixed rate), in order to create a realistic performance in live foward test with funding. 
+
+[Alpha]:https://en.wikipedia.org/wiki/Alpha_(finance)
+[Max Drawdown]:https://en.wikipedia.org/wiki/Drawdown_(economics)
+[Volatility]:https://en.wikipedia.org/wiki/Volatility_(finance)
+[Beta]:https://en.wikipedia.org/wiki/Beta_(finance)
 
 ##2. Backtesting Optimised Strategies
 
