@@ -13,4 +13,8 @@ __Covered in notebooks:__
 
 **Please find an example parameter optimisation [here](https://mw572.github.io/All%20Weather%20V1/Parameter%20Optimisation%20-%20All%20Weather%20V1%20Pairs%20Trade%20-%202007%20-%202010%20-%20Final.html). The full optimisation repo is saved [here](https://github.com/ArtificialInvestor/algo-optimisation).**
 
-**Please find the writeup / analysis repo [here](https://github.com/ArtificialInvestor/portfolio-algos/tree/master/All%20Weather%20V1).**
+**Please find the brief analysis writeup [here](https://mw572.github.io/All Weather V1/All Weather V1 Brief Analysis/All Weather V1 Brief Analysis.md)**
+
+**Please find the full analysis writeup [here](https://mw572.github.io/All Weather V1/All Weather V1 Full Analysis.html)**
+
+
