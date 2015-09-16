@@ -85,6 +85,8 @@ The original algorithm has been optimised over a total six year period in two th
 
 Designed to generate returns in QE tainted environments under the assumption that a stock's price will tend to move to the average price over time. See more [here](https://en.wikipedia.org/wiki/Mean_reversion_(finance).
 
+![graphic](Charts/1.png)
+
 The strategy has a naturally contrarian approach, it appears to profit well from sudden drops, however gives back much of its gains in trending periods. This could clearly be enhanced with a more sophisticated reversion model along with absolute stoplosses and order feathering.
 
 The strategy struggles with the bull run in 2013, however generates considerable retuns over the October 15 Treasury flash crash event. Simialrity of returns are good, we can see the distribution curves fitting one another fairly well with tighter tails and more peak suggesting a generally improved performance over the Out-of-sample period. 
@@ -93,11 +95,15 @@ The strategy struggles with the bull run in 2013, however generates considerable
 
 Generates returns from market trends, it works especially well under sustained periods of market growth. Read more [here](https://en.wikipedia.org/wiki/Momentum_investing).
 
+![graphic](Charts/2.png)
+
 This strategy monopolises on bullish trends, its stoploss design prevented it from experiencing a large drawdown over the subprime crisis. Over various events the returns are largely flat as the stoploss is hit to prevent losses.
 
 ###Pairs Trading
 
 Trading the converging relationship between two correlated stocks in attempt to hedge market and sector risk (market neutral position). This provides a return stream without any major trend / reversion taking place. Read more [here](https://en.wikipedia.org/wiki/Pairs_trade)
+
+![graphic](Charts/3.png)
 
 The pairs trading strategy performs well over the duration of the backtest, it experiences one major drawdown, otherwise it is not considerably effeted by general marktet direction.
 
@@ -109,23 +115,31 @@ Here we examine the performance of the strategies when combined with and without
 
 ####Mean Reversion & Momentum - No Rebalance
 
+![graphic](Charts/4.png)
+
 The combination of Mean reversion and Momentum provides a complementary returns stream which delivers on violent drops and trending periods.
 
 ####Mean Reversion & Momentum - Dynamic Rebalancing
+
+![graphic](Charts/5.png)
 
 The rebalancing version of the Mean Reversion & Momentum strategy acutally underperforms the non rebalanced strategy. This may be due to the optimisation taking place without dynamic rebalancing in effect.
 
 ####Momentum & Pairs Trading
 
+![graphic](Charts/6.png)
+
 Again an enhanced performance as a result of combining the two diversified strategies, in this case the Pairs strategy helps to make the returns stream more consistent
 
 ####Mean Reversion & Pairs Trading
 
+![graphic](Charts/7.png)
+
 The combination of Mean reversion and Pairs strategy is less stable with larger swings, however it provides a negatively correlated returns stream as reflected with its negative Beta
 
-Performance is average over the out-of-sample period, there is somewhat of a fat-tail to the upside.
-
 ###All Strategies - Mean Reversion, Momentum, Pairs Trading - No Rebalance
+
+![graphic](Charts/8.png)
 
 Without rebalancing we see the combination of all three strategies yeilding a smoother returns stream apart from the vigerous returns over mid 2011, where the effects of the mean reversion have contributed.
 
@@ -179,7 +193,7 @@ Without rebalancing we see the combination of all three strategies yeilding a sm
 
 
 
-![png](output_24_1.png)
+![graphic](Charts/9.png)
 
 
 We can clearly see a strong performance from the three strategies combined, returns are steady and consistent. Backtest vs out-of-sample returns are very similar which is a good confirmation of consistent strategy logic.
@@ -195,17 +209,25 @@ Bayesian analysis reveals some more insightful similarities and in some cases un
 
 **2007-10**
 
+![graphic](Charts/10.png)
+
 This was the first period that the individual strategies were optimised over. There is a strong performance considering the bear market of the subprime crisis, however the true value of this optimisation will be seen over similar violent drops in the market.
 
 **2010-13**
+
+![graphic](Charts/11.png)
 
 The strategies fail to take advantage of the bull trend in 2011 however 2012 proves much more fruitful.
 
 **2013-15**
 
+![graphic](Charts/12.png)
+
 Moving onto the out-of-sample period we see a very strong performance, consistent stable returns. Sharp drops have been dulled whilst returns have been generated at most opportunities.
 
 **2015-Sept**
+
+![graphic](Charts/13.png)
 
 This a repeat of the previous backtest but including the market top of 2015 and the "Black Monday" event that hit China and the rest of the world (1000pt drop in Dow Jones). It is very key to not the performance at the far right of the chart. 
 
@@ -375,22 +397,7 @@ It is of my opinion that comparing a multi strategy algorithm against an index i
     [ 0.582  0.541  0.135  0.132]
     
     
-
-
-
-![png](output_37_1.png)
-
-
-
-![png](output_37_2.png)
-
-
-
-![png](output_37_3.png)
-
-
-
-![png](output_37_4.png)
+![graphic](Charts/14.png)
 
 
 Against the ETF benchmark we see a far superior unleveraged performance. It must be made clear that the hedge fund industry is becoming more crowded, and within the benchmark there will be some components that vastly out/under perform so representing an average performance. We can see that despite this algorithm being extremely basic in construction with very simplistic and "proof-of-concept" style design and strategies, it is not without purpose. Compounding at over 8% per year with a Sharpe Ratio just under 1.5 in the out-of-sample period.
