@@ -11,6 +11,6 @@ __Covered in notebooks:__
 * Combining Optimised Strategies with review of performance
 * Review of Results, comparing strongest combinations of strategies
 
-Please find an example parameter optimisation [here](https://mw572.github.io/All%20Weather%20V1/Parameter%20Optimisation%20-%20All%20Weather%20V1%20Pairs%20Trade%20-%202007%20-%202010%20-%20Final.html). The full optimisation repo is saved [here](https://github.com/ArtificialInvestor/algo-optimisation).
+**Please find an example parameter optimisation [here](https://mw572.github.io/All%20Weather%20V1/Parameter%20Optimisation%20-%20All%20Weather%20V1%20Pairs%20Trade%20-%202007%20-%202010%20-%20Final.html). The full optimisation repo is saved [here](https://github.com/ArtificialInvestor/algo-optimisation).**
 
-Please find the full writeup [here](https://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Full%20Analysis.html) with a brief version [here](https://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Brief%20Analysis.html)
+**Please find the full writeup [here](https://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Full%20Analysis.html) with a brief version [here](https://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Brief%20Analysis.html).**
