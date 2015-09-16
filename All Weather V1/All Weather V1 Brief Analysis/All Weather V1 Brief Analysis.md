@@ -123,7 +123,7 @@ The combination of Mean reversion and Momentum provides a complementary returns 
 
 ![graphic](Charts/5.png)
 
-The rebalancing version of the Mean Reversion & Momentum strategy acutally underperforms the non rebalanced strategy. This may be due to the optimisation taking place without dynamic rebalancing in effect.
+The rebalancing version of the Mean Reversion & Momentum strategy acutally underperforms the non rebalanced strategy in the backtest period. This may be due to the optimisation taking place without dynamic rebalancing in effect.
 
 ####Momentum & Pairs Trading
 
