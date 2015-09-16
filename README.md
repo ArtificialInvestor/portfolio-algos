@@ -11,3 +11,5 @@ Please see appropriate folders for information on individual algorithms!
 > We compare different strategies alone vs when combined in any particular combination is somewhat inferior to the quality of returns stream generated when all are combined together.
 
 Please find the optimisation notebooks in [this repo](https://github.com/ArtificialInvestor/portfolio-algos/tree/master/All%20Weather%20V1).
+
+Please find the writeup analysis [here](https://github.com/ArtificialInvestor/portfolio-algos/tree/master/All%20Weather%20V1).
