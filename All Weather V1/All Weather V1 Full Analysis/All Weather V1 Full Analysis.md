@@ -1,17 +1,20 @@
 
-#All Weather V1 - Performance Analysis (Full)
+# All Weather V1 - Performance Analysis (Brief)
 
 **Marcus Williamson - 08/09/15**
 
 ---
-Please find the supplementary optimisation Notebooks [here](https://github.com/ArtificialInvestor/algo-optimisation/tree/master/All%20Weather%20V1)
 
-#####Format:
+The strategies in this analysis were previously optimised, please find the supplementary optimisation Notebooks [here](https://github.com/ArtificialInvestor/algo-optimisation/tree/master/All%20Weather%20V1).
+
+##### Format:
 
 1. Introduction
 1. Backesting Optimised Strategies
 1. Combining Optimised Strategies
 1. Review of Results
+
+---
 
 ##1. Introduction
 
@@ -30,20 +33,20 @@ Desirable returns is understandably a very subjective and a weak term, here I sh
 
 * High [Sharpe Ratio](https://en.wikipedia.org/wiki/Sharpe_ratio) - Deviation risk measure (Reward to variability)
 * High [Stability](https://en.wikipedia.org/wiki/Coefficient_of_determination) - R-squared of a linear fit to the returns
-* High [Alpha][] - Active return of investment
+* High [Alpha](<https://en.wikipedia.org/wiki/Alpha_(finance) - Active return of investment
 * High [Calmar Ratio](https://en.wikipedia.org/wiki/Calmar_ratio) - Compound annual returns divided by Max Drawdowb
 * High [Sortino Ratio](https://en.wikipedia.org/wiki/Sortino_ratio) - Variation on Sharpe penilising downside volatility only
 * High [Omega Ratio](https://en.wikipedia.org/wiki/Omega_ratio) - Probabilty weighted ratio of returns vs losses
-* Low [Max Drawdown][] - Highest to lowest point since inception
-* Low [Volatility][] - Degree of variation in returns
-* Low [Beta][] - Exposure to general market movements
-* Low [Kurtois](https://en.wikipedia.org/wiki/Kurtosis) - "Peakedness" of returns vs Normal Distribution (High = Fat tails
+* Low [Max Drawdown](<https://en.wikipedia.org/wiki/Drawdown_(economics) - Highest to lowest point since inception
+* Low [Volatility](<https://en.wikipedia.org/wiki/Volatility_(finance) - Degree of variation in returns
+* Low [Beta](<https://en.wikipedia.org/wiki/Beta_(finance) - Exposure to general market movements
+* Low [Kurtois](https://en.wikipedia.org/wiki/Kurtosis) - "Peakedness" of returns vs Normal Distribution (High = Fat tails)
 * Positive [Skew](https://en.wikipedia.org/wiki/Skewness) - "Skewdness" of returns vs Normal Distribution
 
 
 The explicit valuations depend entirely on circumstances such as strategy being tested, the current market regime it is tested over, and the slippage or market impact models being implemented. However one is able to compare apples to apples when looking at the same algorithms's strategies in various combinations over the same periods. 
 
-Please note: the securities / ETF's chosen to trade are simply for illustrative purpose, no thought has gone into what pair of stocks to trade, it has simply been taken from wikipedia.
+Please note: the securities chosen to trade are simply for illustrative purpose, no thought has gone into what pair of stocks to trade, it has simply been taken from wikipedia.
 
 ---
 **Dynamic Rebalancing**
@@ -66,12 +69,7 @@ Although both these issues arguably have little affect to my performance it is o
 * Applicable fees can be found [here](https://www.interactivebrokers.com/en/index.php?f=commission&p=stocks1&ns=T), the minimum order charge is 1 USD per order and 0.005 USD per share for fixed tier pricing
 * Slippage model implemented can be read about [here](https://www.quantopian.com/help#ide-slippage)
 
-In both cases the actual algorithm contains more conservative parameters for costs and slippage (per share costs is 200% above fixed rate), in order to create a realistic performance in live foward test with funding. 
-
-[Alpha]:https://en.wikipedia.org/wiki/Alpha_(finance)
-[Max Drawdown]:https://en.wikipedia.org/wiki/Drawdown_(economics)
-[Volatility]:https://en.wikipedia.org/wiki/Volatility_(finance)
-[Beta]:https://en.wikipedia.org/wiki/Beta_(finance)
+In both cases the actual algorithm contains a more generous setup as compared to the backtesting environment, it is in line with the realistic costings as defined by the broker API however. 
 
 ##2. Backtesting Optimised Strategies
 
@@ -809,7 +807,7 @@ Out-of-sample has a slightly wider distribution of daily returns, this is not to
 ![png](output_25_5.png)
 
 
-The rebalancing version of the Mean Reversion & Momentum strategy acutally underperforms the non rebalanced strategy. This may be due to the optimisation taking place without dynamic rebalancing in effect.
+The rebalancing version of the Mean Reversion & Momentum strategy acutally underperforms in the backtest period vs the non rebalanced strategy. This may be due to the optimisation taking place without dynamic rebalancing in effect.
 
 
     #2007-2015 In-sample + Out-of-sample
@@ -1864,7 +1862,6 @@ These metrics could possibly be seen as the worst case (Big 'O') scenario for th
 
 It is of my opinion that comparing a multi strategy algorithm against an index is illogical, however this is industry standard, especially for outside investors, who may rate the performance of a portfolio against a buy-and-hold return of the S&P 500. For this reason I have written up all of my analysis against the standard benchmark. However in the image below you can see the **unleveraged performance** against an ETF which tracks Multi-Strategy Hedge Fund performance, you can see more about this [here](https://uk.finance.yahoo.com/q/pr?s=QAI). This is by no means perfect, however it a step toward reflecting the "institutional players" performance. 
 
-![Benchmark Returns]()
 
 *As a side note: I personally disagree with the ideaology of "out performing the benchmark", this would be an unrealistic bonus, whilst unleveraged, rather than a target. Instead the intelligent investor will ideally seek consistent and reliable compounding of wealth above the risk free rate. Arguablly this has been easy to achieve over the past 7/8 years due to experimental monetary policy and ZIRP specifically. It seems market regieme change is frequent and considerable, this is a blessing for Speculative Traders and a curse for Quantitiative Traders, however in my opinion uncertainty is opportunity.*
 
